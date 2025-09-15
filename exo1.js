@@ -1,5 +1,5 @@
-let degreCelsus = 12;
+let celsius = 25;
+let fahrenheit = (celsius * 9/5) + 32;
 
-function calculerDegreFahrenheit(degreCelsus) {
-    return (degreCelsus * (9/5) + 32);
-}
+document.getElementById('celsius').textContent = celsius;
+document.getElementById('fahrenheit').textContent = fahrenheit;
