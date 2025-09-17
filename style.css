@@ -9,6 +9,8 @@ button {
     padding: 20px;
     margin: 10px;
     border-radius: 12px;
+    background-color: rgb(67, 187, 177);
+    border: 1px solid #000000;
 }
 
 button:hover {
@@ -21,7 +23,29 @@ main {
     flex-wrap: wrap;
 }
 
-p, div {
+.choix {
+    display: flex;
+    justify-content: center;
+}
+
+#choixJoueur {
+    color:blue;
+}
+
+#choixRobot {
+    color:red;
+}
+
+#resultat {
+    color: green;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+}
+
+p {
     padding: 20px;
     font-size: 20px;
 }

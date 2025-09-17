@@ -19,7 +19,7 @@ function joueurChoisit(choixJoueur) {
 
     let resultat = "";
     if (choixJoueur == choixRobot) {
-        resultat = "Egalite";
+        resultat = "Égalité";
         scoreEgalite++;
     } else if (
         (choixJoueur === "pierre" && choixRobot === "ciseaux") ||
