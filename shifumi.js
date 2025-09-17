@@ -1,4 +1,7 @@
 const choix = ["pierre", "feuille", "ciseaux"];
+let scoreJoueur = 0;
+let scoreRobot = 0;
+let scoreEgalite = 0;
 
 document.getElementById('pierre').addEventListener('click', function() {
     joueurChoisit('pierre');
@@ -17,14 +20,17 @@ function joueurChoisit(choixJoueur) {
     let resultat = "";
     if (choixJoueur == choixRobot) {
         resultat = "egalite";
+        scoreEgalite++;
     } else if (
         (choixJoueur === "pierre" && choixRobot === "ciseaux") ||
         (choixJoueur === "ciseaux" && choixRobot === "feuille") ||
         (choixJoueur === "feuille" && choixRobot === "pierre")   
     ) {
         resultat = "jouer a gagné";
+        scoreJoueur++;
     } else {
         resultat = "robot a gagné";
+        scoreRobot++;
     }
 
     document.getElementById('choixJoueur').textContent = choixJoueur;
