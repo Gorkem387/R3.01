@@ -1,4 +1,4 @@
-const choix = [pierre, feuille, ciseaux];
+const choix = ["pierre", "feuille", "ciseaux"];
 
 document.getElementById('pierre').addEventListener('click', function() {
     joueurChoisit('pierre');
@@ -11,5 +11,23 @@ document.getElementById('ciseaux').addEventListener('click', function() {
 });
 
 function joueurChoisit(choix) {
+
+    const choixRobot = choix[Math.floor(Math.random()*choix.length)];
+
+    let resultat = "";
+    if (choix == choixRobot) {
+        resultat = "egalite";
+    } else if (
+        (choix === "pierre" && choixRobot === "ciseaux") ||
+        (choix === "ciseaux" && choixRobot === "feuille") ||
+        (choix === "feuille" && choixRobot === "pierre")   
+    ) {
+        resultat = "jouer a gagné";
+    } else {
+        resultat = "robot a gagné";
+    }
+
     document.getElementById('choix').textContent = choix;
+    document.getElementById('choixRobot').textContent = choixRobot;
+    document.getElementById('resultat').textContent = resultat;
 }
