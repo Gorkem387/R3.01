@@ -19,17 +19,17 @@ function joueurChoisit(choixJoueur) {
 
     let resultat = "";
     if (choixJoueur == choixRobot) {
-        resultat = "egalite";
+        resultat = "Egalite";
         scoreEgalite++;
     } else if (
         (choixJoueur === "pierre" && choixRobot === "ciseaux") ||
         (choixJoueur === "ciseaux" && choixRobot === "feuille") ||
         (choixJoueur === "feuille" && choixRobot === "pierre")   
     ) {
-        resultat = "jouer a gagné";
+        resultat = "Joueur a gagné";
         scoreJoueur++;
     } else {
-        resultat = "robot a gagné";
+        resultat = "Robot a gagné";
         scoreRobot++;
     }
 
