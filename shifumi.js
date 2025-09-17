@@ -36,4 +36,7 @@ function joueurChoisit(choixJoueur) {
     document.getElementById('choixJoueur').textContent = choixJoueur;
     document.getElementById('choixRobot').textContent = choixRobot;
     document.getElementById('resultat').textContent = resultat;
+    document.getElementById('scoreJoueur').textContent = scoreJoueur;
+    document.getElementById('scoreRobot').textContent = scoreRobot;
+    document.getElementById('scoreEgalite').textContent = scoreEgalite;
 }
