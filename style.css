@@ -13,6 +13,21 @@ button {
     border: 1px solid #000000;
 }
 
+input {
+    font-size: 20px;
+    padding: 2px 20px 2px 20px;
+    border-radius: 12px;
+    background-color: rgb(187, 145, 67);
+    border: 1px solid #000000;
+}
+
+input:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s ease-out;
+    box-shadow: 3px 5px 10px rgb(82, 63, 12);
+}
+
 button:hover {
     cursor: pointer;
     transform: scale(1.1);
