@@ -10,24 +10,24 @@ document.getElementById('ciseaux').addEventListener('click', function() {
     joueurChoisit('ciseaux');
 });
 
-function joueurChoisit(choix) {
+function joueurChoisit(choixJoueur) {
 
     const choixRobot = choix[Math.floor(Math.random()*choix.length)];
 
     let resultat = "";
-    if (choix == choixRobot) {
+    if (choixJoueur == choixRobot) {
         resultat = "egalite";
     } else if (
-        (choix === "pierre" && choixRobot === "ciseaux") ||
-        (choix === "ciseaux" && choixRobot === "feuille") ||
-        (choix === "feuille" && choixRobot === "pierre")   
+        (choixJoueur === "pierre" && choixRobot === "ciseaux") ||
+        (choixJoueur === "ciseaux" && choixRobot === "feuille") ||
+        (choixJoueur === "feuille" && choixRobot === "pierre")   
     ) {
         resultat = "jouer a gagné";
     } else {
         resultat = "robot a gagné";
     }
 
-    document.getElementById('choix').textContent = choix;
+    document.getElementById('choixJoueur').textContent = choixJoueur;
     document.getElementById('choixRobot').textContent = choixRobot;
     document.getElementById('resultat').textContent = resultat;
 }
