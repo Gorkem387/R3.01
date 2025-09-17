@@ -31,6 +31,3 @@ function joueurChoisit(choix) {
     document.getElementById('choixRobot').textContent = choixRobot;
     document.getElementById('resultat').textContent = resultat;
 }
-
-git config --global user.email "gorkemyildiz7ds@gmail.com"
-git config --global user.name "Gorkem387"
